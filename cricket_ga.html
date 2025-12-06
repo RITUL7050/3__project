@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cricket Game</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: sans-serif;
+      padding-top: 50px;
+    }
+    button {
+    background-color: yellow;
+    color: red;
+    border-radius:5px ;
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+
+  <button onclick="
+    const userChoice = 'Bat';
+    const randomNumber = Math.random() * 3;
+    let computerChoice;
+
+    if (randomNumber <= 1) {
+      computerChoice = 'Bat';
+    } else if (randomNumber <= 2) {
+      computerChoice = 'Ball';
+    } else {
+      computerChoice = 'Stump';
+    }
+
+    let resultMsg;
+    if (computerChoice === 'Ball') {
+      resultMsg = 'You won!';
+    } else if (computerChoice === 'Bat') {
+      resultMsg = 'It\'s a tie.';
+    } else {
+      resultMsg = 'Computer has won!';
+    }
+
+    alert(`You chose ${userChoice}. Computer chose ${computerChoice}. ${resultMsg}`);
+  ">Bat</button>
+
+  <button onclick="
+    const userChoice = 'Ball';
+    const randomNumber = Math.random() * 3;
+    let computerChoice;
+
+    if (randomNumber <= 1) {
+      computerChoice = 'Bat';
+    } else if (randomNumber <= 2) {
+      computerChoice = 'Ball';
+    } else {
+      computerChoice = 'Stump';
+    }
+
+    let resultMsg;
+    if (computerChoice === 'Ball') {
+      resultMsg = 'It\'s a tie.';
+    } else if (computerChoice === 'Bat') {
+      resultMsg = 'Computer has won!';
+    } else {
+      resultMsg = 'You won!';
+    }
+
+    alert(`You chose ${userChoice}. Computer chose ${computerChoice}. ${resultMsg}`);
+  ">Ball</button>
+
+  <button onclick="
+    const userChoice = 'Stump';
+    const randomNumber = Math.random() * 3;
+    let computerChoice;
+
+    if (randomNumber <= 1) {
+      computerChoice = 'Bat';
+    } else if (randomNumber <= 2) {
+      computerChoice = 'Ball';
+    } else {
+      computerChoice = 'Stump';
+    }
+
+    let resultMsg;
+    if (computerChoice === 'Ball') {
+      resultMsg = 'Computer has won!';
+    } else if (computerChoice === 'Bat') {
+      resultMsg = 'You won!';
+    } else {
+      resultMsg = 'It\'s a tie.';
+    }
+
+    alert(`You chose ${userChoice}. Computer chose ${computerChoice}. ${resultMsg}`);
+  ">Stump</button>
+
+   <a href="https://www.knowledgegate.in/">A</a>
+    
+  
+</body>
+</html>
